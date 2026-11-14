@@ -8,11 +8,11 @@ import ornament from '../assets/images/ornament.svg'
 import arrowRight from '../assets/images/arrow-right.svg'
 
 type WelcomePageProps = {
-  onStart: () => void
+  onRegister: () => void
   onLogin: () => void
 }
 
-function WelcomePage({onStart, onLogin} : WelcomePageProps) {
+function WelcomePage({onRegister, onLogin} : WelcomePageProps) {
     return(
         <main className="welcome">
             <section className="welcome__content">
@@ -29,14 +29,14 @@ function WelcomePage({onStart, onLogin} : WelcomePageProps) {
                     </article>
                     <article className="welcome__feature">
                         <img src={scanIcon} alt=""/>
-                        <p>Быстрое добавление книг (сканирование, ISBM, поиск)</p>
+                        <p>Быстрое добавление книг (сканирование, ISBN, поиск)</p>
                     </article>
                     <article className="welcome__feature">
                         <img src={collectionIcon} alt=""/>
                         <p>Коллекции, статистика и полный контроль библиотеки</p>
                     </article>
                 </div>
-                <button className="welcome__start" type='button' onClick={onStart}>
+                <button className="welcome__start" type='button' onClick={onRegister}>
                     <span>Начать работу</span>
                     <img src={arrowRight} alt=""/>
                 </button>
