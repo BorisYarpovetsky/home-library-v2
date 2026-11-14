@@ -7,7 +7,12 @@ import collectionIcon from '../assets/images/feature-collections.svg'
 import ornament from '../assets/images/ornament.svg'
 import arrowRight from '../assets/images/arrow-right.svg'
 
-function WelcomePage() {
+type WelcomePageProps = {
+  onStart: () => void
+  onLogin: () => void
+}
+
+function WelcomePage({onStart, onLogin} : WelcomePageProps) {
     return(
         <main className="welcome">
             <section className="welcome__content">
@@ -31,13 +36,13 @@ function WelcomePage() {
                         <p>Коллекции, статистика и полный контроль библиотеки</p>
                     </article>
                 </div>
-                <button className="welcome__start" type='button'>
+                <button className="welcome__start" type='button' onClick={onStart}>
                     <span>Начать работу</span>
                     <img src={arrowRight} alt=""/>
                 </button>
                 <p className="welcome__login">
                     У меня уже есть библиотека {' '}
-                    <button type="button">Войти</button>
+                    <button type="button" onClick={onLogin}>Войти</button>
                 </p>
             </section>
         </main>
