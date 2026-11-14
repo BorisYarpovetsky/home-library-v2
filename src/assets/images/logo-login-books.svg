@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 492 500" fill="none" aria-label="Три книги — логотип формы входа Home Library">
+  <g stroke="#F5C28C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Three raised upper edges, following the original approved drawing -->
+    <path d="M95 171 245 70 Q254 65 264 76 L283 81 Q292 79 299 86 L315 87"/>
+    <path d="M177 183 310 86 Q323 72 332 85 L350 91 Q360 86 369 92"/>
+    <path d="M258 191 394 91 Q407 78 419 93 L444 101 467 97"/>
+    <!-- Front faces, subtly staggered -->
+    <path d="M95 173 173 183 173 440 Q167 447 157 444 L103 433 Q93 432 93 419 Z"/>
+    <path d="M175 183 252 190 252 450 Q245 458 235 455 L184 447 Q175 445 175 433 Z"/>
+    <path d="M254 190 333 194 333 466 270 458 Q255 456 255 443 Z"/>
+    <!-- Right side of the final volume -->
+    <path d="M333 194 472 99 472 371 Q472 380 465 384 L333 467 Z"/>
+  </g>
+  <g stroke="#F5C28C" stroke-width="12" stroke-linecap="round">
+    <path d="M116 227 143 229 M116 393 143 397"/>
+    <path d="M195 231 224 233 M195 413 224 416"/>
+    <path d="M276 238 307 241 M276 277 307 280 M276 421 307 424"/>
+  </g>
+</svg>

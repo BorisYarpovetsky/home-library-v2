@@ -1,0 +1,143 @@
+.welcome {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #20100b;
+  background-image:
+    url('../assets/images/welcome-background-recreated.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #f6e7d2;
+  overflow: hidden;
+}
+
+.welcome__content {
+  width: min(680px, 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+}
+
+.welcome__logo {
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
+}
+
+.welcome__title {
+  margin: 12px 0 0;
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 5vw, 72px);
+  font-weight: 700;
+  color: #F7E4C8;
+  line-height: 1.2;
+}
+
+.welcome__subtitle {
+  margin: 8px 0 0;
+  font-size: 30px;
+  color: #F3E7D6;
+}
+
+.welcome__ornament {
+  width: 310px;
+  max-width: 80%;
+  margin: 36px 0 28px;
+}
+
+.welcome__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 20px;
+}
+
+.welcome__feature {
+  position: relative;
+  min-width: 0;
+  padding: 0 12px;
+}
+
+.welcome__feature:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 14px;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #A47149 20%,
+    #A47149 80%,
+    transparent
+  );
+}
+
+.welcome__feature > img {
+  width: 48px;
+  height: 48px;
+}
+
+.welcome__feature p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #e0c8ac;
+}
+
+.welcome__start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  width: min(440px, 100%);
+  margin-top: 38px;
+  padding: 19px 26px;
+
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    #ffddb0,
+    #edb273
+  );
+
+  color: #261207;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.welcome__start img {
+  width: 28px;
+  height: 28px;
+}
+
+.welcome__start:hover {
+  filter: brightness(1.06);
+}
+
+.welcome__login {
+  margin: 16px 0 0;
+  font-size: 15px;
+  color: #f6e7d2;
+}
+
+.welcome__login button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
