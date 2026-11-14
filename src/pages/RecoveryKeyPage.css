@@ -1,0 +1,562 @@
+
+/* ========================================
+   HOME LIBRARY — RECOVERY KEY PAGE
+======================================== */
+
+.recovery-page {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 48px 24px;
+
+  background-color: #1d0e08;
+  background-image: url('../assets/images/registration-background-reconstructed.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: #f6e3c9;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   MAIN CARD
+======================================== */
+
+.recovery-card {
+  box-sizing: border-box;
+  width: min(1086px, 100%);
+  padding: 22px 58px 46px;
+
+  border: 1px solid #e5b879;
+  border-radius: 32px;
+
+  background: rgba(35, 18, 11, 0.94);
+  box-shadow: 0 20px 65px rgba(0, 0, 0, 0.38);
+}
+
+/* ========================================
+   TOP BAR AND LOGO
+======================================== */
+
+.recovery-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+}
+
+.recovery-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.recovery-brand img {
+  width: 68px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.recovery-brand span {
+  color: #f7dfbd;
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.recovery-close {
+  position: absolute;
+  right: -12px;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.recovery-close img {
+  width: 27px;
+  height: 27px;
+}
+
+/* ========================================
+   TITLE AND KEY SYMBOL
+======================================== */
+
+.recovery-intro {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  margin: 30px 36px 30px;
+}
+
+.recovery-intro__icon {
+  box-sizing: border-box;
+  flex: 0 0 118px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 118px;
+  height: 130px;
+
+  border: 1px solid #e1af73;
+  border-radius: 32px;
+
+  background: rgba(126, 76, 42, 0.45);
+}
+
+.recovery-intro__icon img {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+}
+
+.recovery-intro__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.recovery-intro h1 {
+  margin: 0 0 12px;
+
+  color: #f5ddbe;
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 3vw, 43px);
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.recovery-intro p {
+  margin: 0;
+
+  color: #f5e8da;
+  font-size: 23px;
+  line-height: 1.35;
+}
+
+/* ========================================
+   RECOVERY KEY
+======================================== */
+
+.recovery-key {
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  width: min(818px, 100%);
+  min-height: 86px;
+  margin: 0 auto;
+
+  border: 1px solid #f0c98c;
+  border-radius: 20px;
+  background: rgba(84, 48, 29, 0.44);
+
+  overflow: hidden;
+}
+
+.recovery-key__value {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 20px;
+
+  color: #ffe3ba;
+  font-family: Arial, sans-serif;
+  font-size: clamp(19px, 2.7vw, 37px);
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.recovery-key__copy {
+  align-self: stretch;
+  flex: 0 0 88px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-left: 1px solid #d4a269;
+  background: rgba(155, 94, 45, 0.18);
+
+  cursor: pointer;
+}
+
+.recovery-key__copy img {
+  width: 42px;
+  height: 42px;
+}
+
+.recovery-demo {
+  margin: 8px 0 0;
+  color: #e9bc84;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ========================================
+   ACTION TILES
+======================================== */
+
+.recovery-actions {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+
+  margin-top: 30px;
+}
+
+.recovery-action {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-width: 0;
+  min-height: 164px;
+  padding: 20px 10px;
+
+  border: 1px solid #93603c;
+  border-radius: 22px;
+
+  background: rgba(91, 52, 32, 0.56);
+  color: #f8e7d5;
+
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.3;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.recovery-action img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.recovery-action:hover,
+.recovery-key__copy:hover {
+  background: rgba(126, 77, 47, 0.7);
+}
+
+/* ========================================
+   SECURITY WARNING
+======================================== */
+
+.recovery-warning {
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  margin-top: 28px;
+  padding: 16px 40px;
+
+  min-height: 92px;
+
+  border: 1px solid #e67a3a;
+  border-radius: 22px;
+  background: rgba(93, 43, 23, 0.42);
+}
+
+.recovery-warning img {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.recovery-warning p {
+  margin: 0;
+  color: #f8e7d5;
+  font-size: 23px;
+  line-height: 1.3;
+  width: 100%;
+}
+
+/* ========================================
+   CONFIRMATION CHECKBOX
+======================================== */
+
+.recovery-confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+
+  margin: 22px auto 30px;
+
+  color: #f5dfc2;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.recovery-confirm input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  box-sizing: border-box;
+  flex-shrink: 0;
+
+  width: 44px;
+  height: 44px;
+  margin: 0;
+
+  border: 1px solid #f6c88c;
+  border-radius: 9px;
+  background: #f5c991;
+
+  cursor: pointer;
+}
+
+.recovery-confirm input:checked::after {
+  content: "";
+
+  display: block;
+  width: 20px;
+  height: 11px;
+
+  margin: 10px 0 0 10px;
+
+  border-left: 4px solid #241308;
+  border-bottom: 4px solid #241308;
+
+  transform: rotate(-45deg);
+}
+
+/* ========================================
+   CONTINUE BUTTON
+======================================== */
+
+.recovery-continue {
+  box-sizing: border-box;
+
+  display: block;
+
+  width: min(725px, 100%);
+  min-height: 80px;
+
+  margin: 0 auto;
+  padding: 14px 24px;
+
+  border: 1px solid #ffe3b3;
+  border-radius: 24px;
+
+  background: linear-gradient(
+    180deg,
+    #ffe0b5 0%,
+    #eeb879 100%
+  );
+
+  color: #1f1008;
+
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.recovery-continue:hover:not(:disabled) {
+  filter: brightness(1.06);
+}
+
+.recovery-continue:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* ========================================
+   NOTIFICATION
+======================================== */
+
+.recovery-notice {
+  margin: 14px 0 0;
+  padding: 10px 14px;
+
+  border: 1px solid #c79b67;
+  border-radius: 10px;
+
+  background: #493020;
+  color: #ffe2b8;
+
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* ========================================
+   KEYBOARD FOCUS
+======================================== */
+
+.recovery-page button:focus-visible,
+.recovery-confirm input:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* ========================================
+   MEDIUM WINDOWS
+======================================== */
+
+@media (max-width: 1100px) {
+  .recovery-card {
+    padding: 22px 36px 36px;
+  }
+
+  .recovery-intro {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .recovery-intro h1 {
+    font-size: 32px;
+  }
+
+  .recovery-intro p,
+  .recovery-warning p {
+    font-size: 19px;
+  }
+
+  .recovery-action {
+    font-size: 20px;
+  }
+}
+
+/* ========================================
+   SMALL WINDOWS
+======================================== */
+
+@media (max-width: 700px) {
+  .recovery-page {
+    align-items: flex-start;
+    padding: 20px 12px;
+  }
+
+  .recovery-card {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .recovery-brand span {
+    font-size: 25px;
+  }
+
+  .recovery-brand img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .recovery-intro {
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .recovery-intro__icon {
+    flex-basis: 70px;
+    width: 70px;
+    height: 80px;
+    border-radius: 18px;
+  }
+
+  .recovery-intro__icon img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .recovery-intro h1 {
+    font-size: 24px;
+  }
+
+  .recovery-intro p {
+    font-size: 15px;
+  }
+
+  .recovery-key {
+    min-height: 66px;
+  }
+
+  .recovery-key__value {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .recovery-key__copy {
+    flex-basis: 60px;
+  }
+
+  .recovery-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .recovery-action {
+    min-height: 130px;
+    font-size: 18px;
+  }
+
+  .recovery-warning {
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .recovery-warning img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .recovery-warning p {
+    font-size: 15px;
+  }
+
+  .recovery-confirm {
+    gap: 12px;
+    font-size: 17px;
+  }
+
+  .recovery-confirm input {
+    width: 32px;
+    height: 32px;
+  }
+
+  .recovery-confirm input:checked::after {
+    width: 14px;
+    height: 8px;
+    margin: 7px 0 0 7px;
+    border-width: 3px;
+  }
+
+  .recovery-continue {
+    min-height: 60px;
+    font-size: 24px;
+  }
+}

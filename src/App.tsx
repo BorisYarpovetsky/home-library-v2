@@ -3,10 +3,11 @@ import { useState } from 'react'
 import WelcomePage from './pages/WelcomePage'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
+import RecoveryKeyPage from './pages/RecoveryKeyPage'
 
 import './App.css'
 
-type Page = 'welcome' | 'login' | 'register'
+type Page = 'welcome' | 'login' | 'register' | 'recovery'
 
 function App() {
   const [page, setPage] = useState<Page>('welcome')
@@ -28,7 +29,15 @@ function App() {
       />
     )
   }
-  
+
+  if (page === 'recovery') {
+    return (
+      <RecoveryKeyPage
+        onClose={() => setPage('register')}
+      />
+    )
+  }
+
   return (
     <WelcomePage
       onRegister={() => setPage('register')}
