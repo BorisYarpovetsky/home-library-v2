@@ -1,17 +1,25 @@
+
 import { useState } from 'react'
 
 import WelcomePage from './pages/WelcomePage'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import RecoveryKeyPage from './pages/RecoveryKeyPage'
+import DatabaseSetupPage from './pages/DatabaseSetupPage'
 
 import './App.css'
 
-type Page = 'welcome' | 'login' | 'register' | 'recovery'
+type Page =
+  | 'welcome'
+  | 'login'
+  | 'register'
+  | 'recovery'
+  | 'database-setup'
 
 function App() {
   const [page, setPage] = useState<Page>('welcome')
 
+  // Экран авторизации
   if (page === 'login') {
     return (
       <LoginPage
@@ -21,6 +29,7 @@ function App() {
     )
   }
 
+  // Экран регистрации
   if (page === 'register') {
     return (
       <RegisterPage
@@ -30,6 +39,7 @@ function App() {
     )
   }
 
+  // Экран сохранения ключа восстановления
   if (page === 'recovery') {
     return (
       <RecoveryKeyPage
@@ -38,13 +48,18 @@ function App() {
     )
   }
 
+  // Экран первичной настройки базы данных
+  if (page === 'database-setup') {
+    return <DatabaseSetupPage />
+  }
+
+  // Приветственный экран
   return (
     <WelcomePage
       onRegister={() => setPage('register')}
       onLogin={() => setPage('login')}
     />
   )
-
 }
 
 export default App
