@@ -7,6 +7,8 @@ import RegisterPage from './pages/RegisterPage'
 import RecoveryKeyPage from './pages/RecoveryKeyPage'
 import DatabaseSetupPage from './pages/DatabaseSetupPage'
 
+import LearningPage from './pages/LearningPage'
+
 import './App.css'
 
 type Page =
@@ -15,9 +17,11 @@ type Page =
   | 'register'
   | 'recovery'
   | 'database-setup'
+  | 'learning'
 
 function App() {
-  const [page, setPage] = useState<Page>('welcome')
+  // const [page, setPage] = useState<Page>('welcome')
+  const [page, setPage] = useState<Page>('learning')
 
   // Экран авторизации
   if (page === 'login') {
@@ -51,6 +55,11 @@ function App() {
   // Экран первичной настройки базы данных
   if (page === 'database-setup') {
     return <DatabaseSetupPage />
+  }
+
+  // Учебная страница
+  if (page === 'learning') {
+    return <LearningPage />
   }
 
   // Приветственный экран
