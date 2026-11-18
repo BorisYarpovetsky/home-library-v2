@@ -1,6 +1,7 @@
 import BookCard from "../components/learning/BookCard";
 
 import LibrarySetupForm from '../components/learning/LibrarySetupForm'
+import BookEntryForm from '../components/learning/BookEntryForm'
 
 function LearningPage() {
     return (
@@ -20,6 +21,9 @@ function LearningPage() {
 
             <h2>Создание локальной библиотеки</h2>
             <LibrarySetupForm />
+
+            <h2>Экзаменационная форма добавления книги</h2>
+            <BookEntryForm />
         </main>
     )
 }
