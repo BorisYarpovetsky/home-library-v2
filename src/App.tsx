@@ -17,7 +17,7 @@ type Page =
   | 'database-setup'
 
 function App() {
-  const [page, setPage] = useState<Page>('welcome')
+  const [page, setPage] = useState<Page>('database-setup')
 
   // Экран авторизации
   if (page === 'login') {
